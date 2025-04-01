@@ -103,10 +103,17 @@ export default {
                 this.categoria
             ).then(response => {
                 this.fetchData()
+                this.limpiarCategoria()
                 alert('Se guardó con éxito')
             }).catch(error => {
                 console.log('Error al guardar datos', error)
             })
+        },
+        limpiarCategoria() {
+            this.categoria = {
+                id: null,
+                nombre: ''
+            }
         }
     },
     created (){
