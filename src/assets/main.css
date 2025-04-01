@@ -1,0 +1,26 @@
+.navbar .nav-link,
+  .navbar .navbar-brand,
+  .navbar .dropdown-toggle {
+      color: white !important; /* Asegura que se aplique sobre otros estilos */
+      /*border-radius: 5%;*/
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .dropdown-toggle:hover,
+  .navbar .dropdown-item:hover {
+      background: #F6F7C4; /* Cambia el color al pasar el mouse si lo deseas */
+      color: #740938 !important; 
+  }
+  
+  .active{
+      background: #740938;
+      border-radius: 5%;
+  }
+
+  .fondo{
+    border-radius: 5%;
+  }
+  
+h2{
+    font-size: 1.2em;
+ }

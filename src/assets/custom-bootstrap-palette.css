@@ -1,0 +1,109 @@
+/* custom-bootstrap-palette.css */
+
+:root {
+    /* Color base: rgb(175, 23, 64) - un rojo granate */
+    --bs-primary: rgb(175, 23, 64);
+    --bs-primary-rgb: 175, 23, 64;
+    
+    /* Colores complementarios derivados */
+    --bs-secondary: rgb(23, 131, 175);    /* Complementario azul */
+    --bs-secondary-rgb: 23, 131, 175;
+    
+    /* Variaciones de tonalidad */
+    --bs-success: rgb(42, 157, 68);       /* Verde ajustado */
+    --bs-success-rgb: 42, 157, 68;
+    
+    --bs-info: rgb(64, 99, 175);          /* Azul oscuro derivado */
+    --bs-info-rgb: 64, 99, 175;
+    
+    --bs-warning: rgb(175, 125, 23);      /* Ámbar derivado */
+    --bs-warning-rgb: 175, 125, 23;
+    
+    --bs-danger: rgb(220, 53, 69);        /* Rojo brillante */
+    --bs-danger-rgb: 220, 53, 69;
+    
+    /* Colores neutros */
+    --bs-light: rgb(248, 240, 242);       /* Beige claro que armoniza con el principal */
+    --bs-light-rgb: 248, 240, 242;
+    
+    --bs-dark: rgb(48, 18, 25);           /* Versión oscura del color principal */
+    --bs-dark-rgb: 48, 18, 25;
+    
+    /* Variaciones adicionales para más opciones de diseño */
+    --color-primary-light: rgb(207, 68, 105);
+    --color-primary-dark: rgb(139, 18, 51);
+    --color-accent: rgb(175, 89, 23);     /* Color acento */
+    
+    /* Sombras para efectos 3D */
+    --shadow-color: rgba(175, 23, 64, 0.2);
+    --box-shadow: 0 0.5rem 1rem var(--shadow-color);
+  }
+  
+  /* Sobrescribir clases específicas */
+  
+  /* Botones primarios */
+  .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active {
+    background-color: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-dark) !important;
+  }
+  
+  /* Navbar */
+  .navbar.bg-primary,
+  .bg-primary {
+    background-color: var(--bs-primary) !important;
+  }
+  
+  /* Elementos de fondo secundario */
+  .bg-secondary {
+    background-color: var(--bs-secondary) !important;
+  }
+  
+  /* Gradientes y efectos para botones */
+  .btn-gradient-primary {
+    background-image: linear-gradient(to right, var(--bs-primary), var(--color-primary-dark));
+    border: none;
+    color: white;
+  }
+  
+  /* Textos coloreados */
+  .text-primary {
+    color: var(--bs-primary) !important;
+  }
+  
+  /* Bordes */
+  .border-primary {
+    border-color: var(--bs-primary) !important;
+  }
+  
+  /* Tarjetas */
+  .card {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+  
+  .card-header.bg-primary {
+    background-color: var(--bs-primary) !important;
+    color: white;
+  }
+  
+  /* Enlaces */
+  a {
+    color: var(--bs-primary);
+  }
+  
+  a:hover {
+    color: var(--color-primary-dark);
+  }
+  
+  /* Elementos de formulario */
+  .form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+  }
