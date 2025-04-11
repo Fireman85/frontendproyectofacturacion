@@ -16,14 +16,14 @@
                         <RouterLink to="/" class="nav-link"> <i class="bi bi-house"></i> Inicio</RouterLink>
                         </li> -->
                         <li class="nav-item">
-                            <RouterLink @click="selectedLink('productos')" to="/productos" :class="['nav-link', active === 'productos' ? 'active' : '']"> <i class="bi bi-list-stars"></i> Productos</RouterLink>
+                            <RouterLink to="/productos" :class="['nav-link', active === 'productos' ? 'active' : '']"> <i class="bi bi-list-stars"></i> Productos</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <RouterLink @click="selectedLink('personas')" to="/personas" :class="['nav-link', active === 'personas' ? 'active' : '']"> <i class="bi bi-person"></i> Personas</RouterLink>
+                            <RouterLink to="/personas" :class="['nav-link', active === 'personas' ? 'active' : '']"> <i class="bi bi-person"></i> Personas</RouterLink>
                         </li>
                                     
                         <li class="nav-item">
-                            <RouterLink @click="selectedLink('facturacion')" to="/facturacion" :class="['nav-link', active === 'facturacion' ? 'active' : '']">  <i class="bi bi-receipt"></i> Facturación</RouterLink>
+                            <RouterLink to="/facturacion" :class="['nav-link', active === 'facturacion' ? 'active' : '']">  <i class="bi bi-receipt"></i> Facturación</RouterLink>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,9 +34,9 @@
                                 <!-- <li><a @click="selectedLink('')" class="dropdown-item text-white" href="#"><i class="bi bi-building"></i> Compañias</a></li> -->
                                 <!-- <li><a @click="selectedLink('')" class="dropdown-item text-white" href="#"><i class="bi bi-wallet2"></i> Termino de pago</a></li> -->
                                 <!-- <li><a @click="selectedLink('')" class="dropdown-item" href="#"> <i class="bi bi-basket"></i> Categorias</a></li> -->
-                                <RouterLink @click="selectedLink('')" to="/compania" class="dropdown-item text-white">  <i class="bi bi-building"></i> Compañias</RouterLink>
-                                <RouterLink @click="selectedLink('')" to="/terminos-de-pago" class="dropdown-item text-white">  <i class="bi bi-wallet2"></i> Termino de pago</RouterLink>
-                                <RouterLink @click="selectedLink('')" to="/categorias" class="dropdown-item text-white">  <i class="bi bi-basket"></i> Categorias</RouterLink>
+                                <RouterLink to="/compania" class="dropdown-item text-white">  <i class="bi bi-building"></i> Compañias</RouterLink>
+                                <RouterLink to="/terminos-de-pago" class="dropdown-item text-white">  <i class="bi bi-wallet2"></i> Termino de pago</RouterLink>
+                                <RouterLink to="/categorias" class="dropdown-item text-white">  <i class="bi bi-basket"></i> Categorias</RouterLink>
                             </ul>
                         </li>
                     </ul>
