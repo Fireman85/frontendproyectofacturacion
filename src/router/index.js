@@ -14,6 +14,7 @@ const router = createRouter({
         { path: '/categorias', name: 'categorias', component: () => import('@/views/Categorias.vue') },
         { path: '/terminos-de-pago', name: 'terminosdepago', component: () => import('@/views/Terminos.vue') },
         { path: '/compania', name: 'compania', component: () => import('@/views/Companias.vue') },
+        { path: '/facturacion', name: 'facturacion', component: () => import('@/views/Facturacion.vue') },
 
       ]
     }
